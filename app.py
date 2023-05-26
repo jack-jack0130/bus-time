@@ -44,7 +44,7 @@ def get_bustime(x):
 
 
 def get_shuttle():
-    now = datetime.now()
+    now = datetime.now() + timedelta(hours=8)
 
     # Calculate the time after 30 minutes
     time_after_30_minutes = now + timedelta(minutes=30)
