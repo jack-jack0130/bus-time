@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="refresh" content="30">
+    <title>Bus Time</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #0f0;
+            font-family: "Courier New", monospace;
+            font-size: 18px;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 24px;
+        }
+
+        ul {
+            padding-left: 0;
+        }
+
+        li {
+            list-style-type: none;
+            margin-bottom: 10px;
+        }
+
+        li:before {
+            content: ">";
+            margin-right: 5px;
+            color: #0f0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Bus Time</h1>
+    <ul id="bus-list">
+        {% for item in output %}
+        <li>{{ item }}</li>
+        {% endfor %}
+    </ul>
+</body>
+
+</html>
